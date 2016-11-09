@@ -21,7 +21,7 @@
       <div class="inner">
         <h1>Hotswap Agent</h1>
         <h2>Java unlimited redefinition of classes at runtime.</h2>
-        <a href="https://github.com/HotswapProjects/HotswapAgent" class="button"><small>View project on</small> GitHub</a>
+        <a href="https://github.com/HotswapProjects/HotswapAgentPages" class="button"><small>View project on</small> GitHub</a>
       </div>
     </header>
 
@@ -221,31 +221,65 @@ uses agent services to:</p>
 <li>... and many other</li>
 </ul>
 
-<p>Packaged plugins:</p>
+<h4>
+<a id="java-frameworks-plugins" class="anchor" href="#java-frameworks-plugins" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Java frameworks plugins:</h4>
 
 <ul>
-<li>Hibernate (3x,4x) - Reload Hibernate configuration after entity create/change.</li>
-<li>Spring (3x, 4.x) - Reload Spring configuration after class definition/change.</li>
-<li>Jetty - add extra classpath to the app classloader. All versions supporting WebAppContext.getExtraClasspath should be supported.</li>
-<li>Tomcat (7.x, 8.x) configure Apache Tomcat with extraClasspath property.</li>
+<li>
+<a href="plugin/hotswap-agent-deltaspike-plugin/README.md">Deltaspike</a> (1.x) - messages, ViewConfig, repository, proxy reloading.</li>
+<li>
+<a href="plugin/hotswap-agent-el-resolver-plugin/README.md">ELResolver</a> 2.2 (JuelEL, Appache Commons EL, Oracle EL 3.0)- clear ELResolver cache on class change. Support hotswap for #{...} expressions.</li>
+<li>
+<a href="plugin/hotswap-agent-hibernate-plugin/README.md">Hibernate</a> (3x,4x) - Reload Hibernate configuration after entity create/change.</li>
 <li>Jersey</li>
-<li>ZK (5x-7x) - ZK Framework (<a href="http://www.zkoss.org/">http://www.zkoss.org/</a>). Change library properties default values to disable caches, maintains Label cache and
-bean resolver cache.</li>
-<li>Logback - Logback configuration reload</li>
-<li>Log4j2 - Log4j2 configuration reload</li>
-<li>Hotswapper - Watch for any class file change and reload (hotswap) it on the fly via Java Platform Debugger Architecture (JPDA)</li>
-<li>AnonymousClassPatch - Swap anonymous inner class names to avoid not compatible changes.</li>
-<li>ELResolver 2.2 (JuelEL, Appache Commons EL, Oracle EL 3.0)- clear ELResolver cache on class change. Support hotswap for #{...} expressions.</li>
-<li>Seam (2.2, 2.3) - flush JBoss reference cache. Support for properties file change (messages[])</li>
-<li>JBossModules - add extra class path to JBoss's module class loader.</li>
-<li>JSF (mojarra 2.1, 2.2, MyFaces 2.2) - support for application resource bundle changes (properties files).</li>
-<li>OsgiEquinox - Hotswap support for Eclipse plugin or Eclipse platform development.</li>
-<li>RestEasy (2.x, 3.x) - Implemented by ResteasyRegistry plugin. Cleanups and registers class redefinitions.</li>
-<li>CDI/Weld - reload bean class definition after class create(managed beans)/change. Proxy bean redefinition after proxied class change. EAR support. Bean reloading according strategy specified by parameter 'weld.beanReloadStrategy' in config file.</li>
-<li>Deltaspike (1.x) - messages,ViewConfig, repository, proxy reloading.</li>
-<li>WebObjects - Clear key value coding, component, action and validation caches after class change.</li>
-<li>WildFlyELResolver - Clear BeanELResolver after any class redefinition.</li>
-<li>Proxy (supported com.sun.proxy, CGlib) - redefines proxy classes that implement or extend changed interfaces or classes.</li>
+<li>
+<a href="plugin/hotswap-agent-jsf-plugin/README.md">JSF</a> (mojarra 2.1, 2.2, MyFaces 2.2) - support for application resource bundle changes (properties files).</li>
+<li>
+<a href="plugin/hotswap-agent-logback-plugin/README.md">Logback</a> - Logback configuration reload.</li>
+<li>
+<a href="plugin/hotswap-agent-log4j2-plugin/README.md">Log4j2</a> - Log4j2 configuration reload.</li>
+<li>
+<a href="plugin/hotswap-agent-osgiequinox-plugin/README.md">OsgiEquinox</a> - Hotswap support for Eclipse plugin or Eclipse platform development.</li>
+<li>
+<a href="plugin/hotswap-agent-resteasy-registry-plugin/README.md">RestEasy</a> (2.x, 3.x) - Cleanups and registers class redefinitions.</li>
+<li>
+<a href="plugin/hotswap-agent-seam-plugin/README.md">Seam</a> (2.2, 2.3) - flush JBoss reference cache. Support for properties file change (messages[])</li>
+<li>
+<a href="plugin/hotswap-agent-spring-plugin/README.md">Spring</a> (3x, 4.x) - Reload Spring configuration after class definition/change.</li>
+<li>
+<a href="plugin/hotswap-agent-webobjects-plugin/README.md">WebObjects</a> - Clear key value coding, component, action and validation caches after class change.</li>
+<li>
+<a href="plugin/hotswap-agent-weld-plugin/README.md">Weld</a> (CDI) - reload bean class definition after class create(managed beans)/change. Proxy bean redefinition. EAR support. Bean reloading according strategy.</li>
+<li>
+<a href="plugin/hotswap-agent-wildfly-el-plugin/README.md">WildFlyELResolver</a> - Clear BeanELResolver after any class redefinition.</li>
+<li>
+<a href="plugin/hotswap-agent-zk-plugin/README.md">ZK</a> (5x-7x) - ZK Framework (<a href="http://www.zkoss.org/">http://www.zkoss.org/</a>). Change library properties default values to disable caches, maintains Label cache and bean resolver cache.</li>
+</ul>
+
+<h4>
+<a id="servlet-containers-and-application-servers-plugins" class="anchor" href="#servlet-containers-and-application-servers-plugins" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Servlet containers and application servers plugins:</h4>
+
+<ul>
+<li>
+<a href="plugin/ihotswap-agent-jbossmodules-plugin/README.md">JBossModules</a> - add extra class path to JBoss's module class loader. (Wildfly)</li>
+<li>
+<a href="plugin/hotswap-agent-jetty-plugin/README.md">Jetty</a> - add extra classpath to the app classloader. All versions supporting WebAppContext.getExtraClasspath should be supported.</li>
+<li>
+<a href="plugin/hotswap-agent-tomcat-plugin/README.md">Tomcat</a> (7.x, 8.x) configure Apache Tomcat with extraClasspath property.</li>
+</ul>
+
+<h4>
+<a id="jvm-plugins---hotswapping-enhancements" class="anchor" href="#jvm-plugins---hotswapping-enhancements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>JVM plugins - hotswapping enhancements:</h4>
+
+<ul>
+<li>
+<a href="hotswap-agent-core/src/main/java/org/hotswap/agent/plugin/jvm/README.md">AnonymousClassPatch</a> - Swap anonymous inner class names to avoid not compatible changes.</li>
+<li>
+<a href="hotswap-agent-core/src/main/java/org/hotswap/agent/plugin/jvm/README.md">ClassInit</a> - initializes new static members/enum values after class/enum redefinition and keeps surviving static values. (Fix of known DCEVM)</li>
+<li>
+<a href="hotswap-agent-core/src/main/java/org/hotswap/agent/plugin/hotswapper/README.md">Hotswapper</a> - Watch for any class file change and reload (hotswap) it on the fly via Java Platform Debugger Architecture (JPDA)</li>
+<li>
+<a href="plugin/hotswap-agent-proxy-plugin/README.md">Proxy</a> (supported com.sun.proxy, CGlib) - redefines proxy classes that implement or extend changed interfaces or classes.</li>
 </ul>
 
 <p>Find a detail documentation of each plugin in the plugin project main README.md file.</p>
@@ -329,40 +363,6 @@ mvn release:perform -Darguments="-Ddcevm=server"
 </code></pre>
 
 <h1>
-<a id="plugin-specific-settings" class="anchor" href="#plugin-specific-settings" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Plugin specific settings</h1>
-
-<h3>
-<a id="osgiequinox--eclipse-rcp" class="anchor" href="#osgiequinox--eclipse-rcp" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>OsgiEquinox / Eclipse RCP</h3>
-
-<p>OsgiEquinox / Eclipse plugin provides hotswap support for Eclipse plugin or Eclipse platform development
-(Do not confuse it with common development in Eclipse!).</p>
-
-<p>Following options should be setup in eclipse.ini for debugee Eclipse instance:</p>
-
-<pre><code> # use application classloader for the framework
--Dosgi.frameworkParentClassloader=app
- # development classpath that is added to each plugin classpath
--Dosgi.dev=[extra_classpath]
- # use dcevm as JVM
--XXaltjvm=dcevm
- # enable hotswapagent
--javaagent:PATH_TO_AGENT/hotswap-agent.jar
- # enable remote debugging on port 8000
--agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=8000
-</code></pre>
-
-<p>extra_classpath points to directory with compiled classes. When a new class is compiled it is sent by remote debugger to HotswapAgent. HotswapAgent
-stores this file into extra_classpath directory.</p>
-
-<p>It is also necessary to setup following hotswap-agent.properties:</p>
-
-<pre><code>extraClasspath=[extra_classpath]
-osgiEquinox.debugMode=true
-</code></pre>
-
-<p>then connect the IDE debugger (eclipse, netbeans or idea) to port 8000 and happy hotswapping!</p>
-
-<h1>
 <a id="credits" class="anchor" href="#credits" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Credits</h1>
 
 <p>Hotswap agent:</p>
@@ -371,7 +371,7 @@ osgiEquinox.debugMode=true
 <li>Jiri Bubnik - project coordinator, initial implementation</li>
 <li>Alexandros Papadakis - Maven Versioning, Weld, JSF, Hibernate3, RestEasy, WildFly plugins</li>
 <li>Erki Ehtla - Spring plugin, Proxy plugin</li>
-<li>Vladimir Dvorak - Seam, ELResolver, JSF, OsgiEquinox, Weld, Deltaspike, JavaBean, JBossModules  plugins</li>
+<li>Vladimir Dvorak - Seam, ELResolver, JSF, OsgiEquinox, Weld, Deltaspike, JavaBean, JBossModules, ClassInit</li>
 <li>Sergey Lysenko - Weld plugin</li>
 <li>Samuel Pelletier - WebObjects plugin</li>
 <li>Jan Tecl - web design</li>
@@ -383,22 +383,22 @@ osgiEquinox.debugMode=true
 <ul>
 <li>Ivan Dubrov - current project coordinator, update to Java7+Java8, patches, build system (Gradle)</li>
 <li>Thomas Würthinger - initial implementation.</li>
-<li>Kerstin Breitender – contributor.</li>
-<li>Christoph Wimberger – contributor.</li>
+<li>Kerstin Breitender - contributor.</li>
+<li>Christoph Wimberger - contributor.</li>
 </ul>
         </section>
 
         <aside id="sidebar">
-          <a href="https://github.com/HotswapProjects/HotswapAgent/zipball/master" class="button">
+          <a href="https://github.com/HotswapProjects/HotswapAgentPages/zipball/master" class="button">
             <small>Download</small>
             .zip file
           </a>
-          <a href="https://github.com/HotswapProjects/HotswapAgent/tarball/master" class="button">
+          <a href="https://github.com/HotswapProjects/HotswapAgentPages/tarball/master" class="button">
             <small>Download</small>
             .tar.gz file
           </a>
 
-          <p class="repo-owner"><a href="https://github.com/HotswapProjects/HotswapAgent"></a> is maintained by <a href="https://github.com/HotswapProjects">HotswapProjects</a>.</p>
+          <p class="repo-owner"><a href="https://github.com/HotswapProjects/HotswapAgentPages"></a> is maintained by <a href="https://github.com/HotswapProjects">HotswapProjects</a>.</p>
 
           <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
         </aside>
