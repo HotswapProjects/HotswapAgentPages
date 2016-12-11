@@ -1,0 +1,51 @@
+---
+title: Plugins
+tags: []
+keywords: plugins, framework
+sidebar: mydoc_sidebar
+permalink: mydoc_plugins.html
+folder: mydoc
+toc: false
+---
+Plugins administered by Hotswap agent are usually targeted towards a specific framework. For example Spring plugin
+uses agent services to:
+
+* Modify root Spring classes to get Spring contexts and registered scan path
+* Watch for any resource change on a scan path
+* Watch for a hotswap of a class file within a scan path package
+* Reload bean definition after a change
+* ... and many other
+
+#### Java frameworks plugins:
+
+* [Deltaspike]({{ site.data.mydoc_plugin_deltaspike.link }}) (1.x) - messages, ViewConfig, repository, proxy reloading.
+* [ELResolver]({{ site.data.mydoc_plugin_el_resolver.link }}) 2.2 (JuelEL, Appache Commons EL, Oracle EL 3.0)- clear ELResolver cache on class change. Support hotswap for #{...} expressions.
+* [Hibernate v3]({{ site.data.mydoc_plugin_hibernate3.link }}) (3x,4x,5x) - Reload Hibernate configuration after entity create/change.
+* [Hibernate v4,v5]({{ site.data.mydoc_plugin_hibernate45.link }}) (3x,4x,5x) - Reload Hibernate configuration after entity create/change.
+* Jersey
+* [JSF]({{ site.data.mydoc_plugin_jsf }}/README.md) (mojarra 2.1, 2.2, MyFaces 2.2) - support for application resource bundle changes (properties files).
+* [Logback]({{ site.data.mydoc_plugin_logback.link }}) - Logback configuration reload.
+* [Log4j2]({{ site.data.mydoc_plugin_log4j2.link }}) - Log4j2 configuration reload.
+* [OsgiEquinox]({{ site.data.mydoc_plugin_osgiequinox.link }}) - Hotswap support for Eclipse plugin or Eclipse platform development.
+* [RestEasy]({{ site.data.mydoc_plugin_resteasy_registry.link }}) (2.x, 3.x) - Cleanups and registers class redefinitions.
+* [Seam]({{ site.data.mydoc_plugin_seam.link }}) (2.2, 2.3) - flush JBoss reference cache. Support for properties file change (messages[])
+* [Spring]({{ site.data.mydoc_plugin_spring.link }}) (3x, 4.x) - Reload Spring configuration after class definition/change.
+* [WebObjects]({{ site.data.mydoc_plugin_webobjects.link }}) - Clear key value coding, component, action and validation caches after class change.
+* [Weld]({{ site.data.mydoc_plugin_weld.link }}) (CDI) (2.2-2.4) - reload bean class definition after class create(managed beans)/change. Proxy bean redefinition. EAR support. Bean reloading according strategy.
+* [WildFlyELResolver]({{ site.data.mydoc_plugin_wildfly_el.link }}) - Clear BeanELResolver after any class redefinition.
+* [ZK]({{ site.data.mydoc_plugin_zk.link }}) (5x-7x) - ZK Framework (http://www.zkoss.org/). Change library properties default values to disable caches, maintains Label cache and bean resolver cache.
+
+#### Servlet containers and application servers plugins:
+
+* [JBossModules]({{ site.data.mydoc_plugin_jbossmodules.link }}) - add extra class path to JBoss's module class loader. (Wildfly)
+* [Jetty]({{ site.data.mydoc_plugin_jetty.link }}) - add extra classpath to the app classloader. All versions supporting WebAppContext.getExtraClasspath should be supported.
+* [Tomcat]({{ site.data.mydoc_plugin_tomcat.link }}) (7.x, 8.x) configure Apache Tomcat with extraClasspath property.
+
+#### JVM plugins - hotswapping enhancements:
+
+* [AnonymousClassPatch]({{ site.data.mydoc_plugin_anonymous_class_patch.link }}) - Swap anonymous inner class names to avoid not compatible changes.
+* [ClassInit]({{ site.data.mydoc_plugin_class_init.link }}) - initializes new static members/enum values after class/enum redefinition and keeps surviving static values. (Fix of known DCEVM)
+* [Hotswapper]({{ site.data.mydoc_plugin_hotswapper.link }}) - Watch for any class file change and reload (hotswap) it on the fly via Java Platform Debugger Architecture (JPDA)
+* [Proxy]({{ site.data.mydoc_plugin_proxy.link }}) (supported com.sun.proxy, CGlib) - redefines proxy classes that implement or extend changed interfaces or classes.
+
+Find a detail documentation of each plugin in the plugin project main README.md file.

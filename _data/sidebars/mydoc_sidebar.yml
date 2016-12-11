@@ -1,0 +1,162 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: Sidebar
+  product:
+  version:
+  folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage
+      output: pdf
+      type: frontmatter
+
+  - title: Overview
+    output: web, pdf
+    folderitems:
+
+    - title: Get started
+      url: /index.html
+      output: web, pdf
+      type: homepage
+
+    - title: Quick Start
+      url: /mydoc_quickstart.html
+      output: web, pdf
+
+  - title: Release Notes
+    output: web, pdf
+    folderitems:
+
+    - title: 0.4 Release notes
+      url: /mydoc_release_notes_04.html
+      output: web, pdf
+
+  - title: Installation
+    output: web, pdf
+    folderitems:
+
+    - title: Eclipse
+      url: /mydoc_setup_eclipse.html
+      output: web, pdf
+
+    - title: IntelliJ IDEA
+      url: /mydoc_setup_intellij_idea.html
+      output: web, pdf
+
+    - title: NetBeans
+      url: /mydoc_setup_netbeans.html
+      output: web, pdf
+
+  - title: Framework plugins
+    output: web, pdf
+    folderitems:
+
+    - title: DeltaSpike
+      url: /mydoc_plugin_deltaspike.html
+      output: web, pdf
+
+    - title: ELResolver
+      url: /mydoc_plugin_el_resolver.html
+      output: web, pdf
+
+    - title: Hibernate 3
+      url: /mydoc_plugin_hibernate3.html
+      output: web, pdf
+      
+    - title: Hibernate 4,5
+      url: /mydoc_plugin_hibernate45.html
+      output: web, pdf
+
+    - title: Jersey
+      url: /mydoc_plugin_jersey.html
+      output: web, pdf
+
+    - title: JSF
+      url: /mydoc_plugin_jsf.html
+      output: web, pdf
+
+    - title: Logback
+      url: /mydoc_plugin_logback.html
+      output: web, pdf
+
+    - title: Log4j2
+      url: /mydoc_plugin_log4j2.html
+      output: web, pdf
+
+    - title: Equinox (osgi) eclipse
+      url: /mydoc_plugin_osgiequinox.html
+      output: web, pdf
+
+    - title: RestEasy
+      url: /mydoc_plugin_resteasy_registry.html
+      output: web, pdf
+
+    - title: Seam
+      url: /mydoc_plugin_seam.html
+      output: web, pdf
+
+    - title: Spring
+      url: /mydoc_plugin_spring.html
+      output: web, pdf
+
+    - title: WebObjects
+      url: /mydoc_plugin_webobjects.html
+      output: web, pdf
+
+    - title: Weld
+      url: /mydoc_plugin_weld.html
+      output: web, pdf
+
+    - title: WildFlyELResolver
+      url: /mydoc_plugin_wildfly_el.html
+      output: web, pdf
+
+    - title: ZK
+      url: /mydoc_plugin_zk.html
+      output: web, pdf
+
+  - title: JVM/RT plugins
+    output: web, pdf
+    folderitems:
+
+    - title: Anonymous Class Patch
+      url: /mydoc_plugin_anonymous_class_patch.html
+      output: web, pdf
+
+    - title: Class Init
+      url: /mydoc_plugin_class_init.html
+      output: web, pdf
+
+    - title: Hotswapper
+      url: /mydoc_plugin_hotswapper.html
+      output: web, pdf
+
+    - title: Proxy
+      url: /mydoc_plugin_proxy.html
+      output: web, pdf
+
+  - title: Containers plugins
+    output: web, pdf
+    folderitems:
+
+    - title: JBoss Modules
+      url: /mydoc_plugin_jbossmodules.html
+      output: web, pdf
+
+    - title: Jetty
+      url: /mydoc_plugin_jetty.html
+      output: web, pdf
+
+    - title: Tomcat
+      url: /mydoc_plugin_tomcat.html
+      output: web, pdf
+
