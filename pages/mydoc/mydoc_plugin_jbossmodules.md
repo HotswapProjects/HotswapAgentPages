@@ -6,8 +6,8 @@ folder: doc
 toc: false
 ---
 
-Add extraClassPath from hotswap-agent.properties to org.jboss.modules.ModuleClassLoader. Therefore
-extraClassPath can be used for all enviroments based on this jsboss's class loader (WildFly).
+Add extraClassPath from hotswap-agent.properties to org.jboss.modules.ModuleClassLoader, so that
+all application servers (JBossAS, WildFly) based on jboss's module classloader can use HotswapAgent's **extraClassPath**.
 
 Configuration
 -------------

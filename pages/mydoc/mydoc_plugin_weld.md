@@ -6,8 +6,8 @@ folder: doc
 toc: false
 ---
 
-Support for [Weld/CDI](http://weld.cdi-spec.org/). Register a new created bean class into BeanManager. Reinject injection points after bean class redefinition.
-Reload proxy factory after proxied class redefinition. Bean reloading strategy can be specified by
+Support for [Weld/CDI](http://weld.cdi-spec.org/). Register a new bean class into BeanManager. Reinject injection points after 
+bean class redefinition. Reload proxy factory after proxied class redefinition. Bean reloading strategy can be specified by
 `weld.beanReloadingStrategy` in hotswap-agent.properties.
 
 There are 4 possible values for this parameter:
@@ -22,13 +22,16 @@ There are 4 possible values for this parameter:
     #   - NEVER - never reload bean (default)
     # weld.beanReloadStrategy=NEVER
 
-Reloading strategy  is powerfull mechanism how to control bean reloading according personal preferences. Most general strategy is `CLASS_CHANGE`.
-This strategy ensures bean state consistency for each type of code change, unfortunately it leads to recreation of session beans and lost
-of session subsequently. Less invasive strategies are `METHOD_SIGNATURE` and `FIELD_SIGNATURE_CHANGE`. These don't reload bean when method code
-is changed but reload bean after method parameters are changed respectively class fields are changed. Less invasive strategy is strategy 'NEVER',
-which never reloads beans. It can lead to session or application bean inconsistence. Strategy `NEVER` left the responsibility of bean reloading
-to developer. Usually experienced developer knows the best when the bean modification leads to inconsistent state and are able to drive
-bean reloading himself, therefore the default strategy is 'NEVER'.
+Reloading strategy is powerfull mechanism for control the bean reloading according personal preferences. Following strategies can be used:
+
+* `CLASS_CHANGE`  is most general strategy. It reloads bean on any class modification. Strategy ensures bean state consistency for each type of code 
+change. On other hand it leads to recreation of session beans and lost of sessions subsequently. 
+* `METHOD_SIGNATURE` reload bean if any method or field is added (including constructors) or existing method or field signature is changed. 
+It also includes changes of class signature. Any class, field or method annotation is included into signature evaluation as well.
+* `FIELD_SIGNATURE_CHANGE` reload bean if any field is added or existing field signature is changed. Briefly speaking if a class data is changed.
+* 'NEVER' is default strategy and less invasive one. It lefts the responsibility of bean reloading to developer himself. It can lead to session 
+or application bean inconsistence. Experienced developer knows the best when the bean modification leads to inconsistent state and should 
+be capable to manage bean reloading himself. 
 
 #### Implementation notes:
 Plugin initialization is done in `org.jboss.as.weld.deployment.BeanDeploymentArchiveImpl` constructor in case if Weld is running under Wildfly or
@@ -38,4 +41,5 @@ created. Each instance of ProxyFactory is registered in WeldPlugin in registered
 proxy factory instance is found and that is forced to recreate proxy class.
 
 # TODO:
-If a new proxy class is created than weld creates common beans instead proxied beans.
+If a
+new proxy class is created than weld creates common beans instead proxied beans.
