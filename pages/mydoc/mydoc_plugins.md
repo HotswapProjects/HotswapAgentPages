@@ -22,7 +22,8 @@ uses agent services to:
 * [ELResolver]({{ site.data.mydoc_plugin_el_resolver.link }}) 2.2 (JuelEL, Appache Commons EL, Oracle EL 3.0)- clear ELResolver cache on class change. Support hotswap for #{...} expressions.
 * [Hibernate v3]({{ site.data.mydoc_plugin_hibernate3.link }}) (3x,4x,5x) - Reload Hibernate configuration after entity create/change.
 * [Hibernate v4,v5]({{ site.data.mydoc_plugin_hibernate45.link }}) (3x,4x,5x) - Reload Hibernate configuration after entity create/change.
-* Jersey
+* [Jersey 1]({{ site.data.mydoc_plugin_jersey1.link }}) - reload Jersey1 container after root resource or provider class definition or redefinition.
+* [Jersey 2]({{ site.data.mydoc_plugin_jersey2.link }}) - reload Jersey2 container after root resource or provider class definition or redefinition.
 * [JSF]({{ site.data.mydoc_plugin_jsf }}/README.md) (mojarra 2.1, 2.2, MyFaces 2.2) - support for application resource bundle changes (properties files).
 * [Logback]({{ site.data.mydoc_plugin_logback.link }}) - Logback configuration reload.
 * [Log4j2]({{ site.data.mydoc_plugin_log4j2.link }}) - Log4j2 configuration reload.
@@ -31,7 +32,7 @@ uses agent services to:
 * [Seam]({{ site.data.mydoc_plugin_seam.link }}) (2.2, 2.3) - flush JBoss reference cache. Support for properties file change (messages[])
 * [Spring]({{ site.data.mydoc_plugin_spring.link }}) (3x, 4.x) - Reload Spring configuration after class definition/change.
 * [WebObjects]({{ site.data.mydoc_plugin_webobjects.link }}) - Clear key value coding, component, action and validation caches after class change.
-* [Weld]({{ site.data.mydoc_plugin_weld.link }}) (CDI) (2.2-2.4) - reload bean class definition after class create(managed beans)/change. Proxy bean redefinition. EAR support. Bean reloading according strategy.
+* [Weld]({{ site.data.mydoc_plugin_weld.link }}) (CDI) (2.2-2.4) - reload bean class definition after class definition/change. Support for weld proxy, EAR. Beans can be reloaded according strategy defined in property file.
 * [WildFlyELResolver]({{ site.data.mydoc_plugin_wildfly_el.link }}) - Clear BeanELResolver after any class redefinition.
 * [ZK]({{ site.data.mydoc_plugin_zk.link }}) (5x-7x) - ZK Framework (http://www.zkoss.org/). Change library properties default values to disable caches, maintains Label cache and bean resolver cache.
 

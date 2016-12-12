@@ -17,7 +17,8 @@ toc: false
 * Spring 4.2+
 * Weld 2.3, 2.4 -  bean reloading in contexts + reloading strategy
 * MyFaces 2.2
-* log4j 2.7 
+* Log4j 2.7 
+* Jersey 1
 
 ### Core changes:
 

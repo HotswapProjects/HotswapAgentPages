@@ -76,8 +76,12 @@ entries:
       url: /mydoc_plugin_hibernate45.html
       output: web, pdf
 
-    - title: Jersey
-      url: /mydoc_plugin_jersey.html
+    - title: Jersey 1
+      url: /mydoc_plugin_jersey1.html
+      output: web, pdf
+
+    - title: Jersey 2
+      url: /mydoc_plugin_jersey2.html
       output: web, pdf
 
     - title: JSF
