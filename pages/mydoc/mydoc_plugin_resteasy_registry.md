@@ -6,7 +6,7 @@ folder: doc
 toc: false
 ---
 
-RESTeasy plugin which cleanups and registers class redefinitions in the RESTeasy ResourceMethodRegistry
+RESTeasy plugin cleanup and register class redefinitions in the RESTeasy ResourceMethodRegistry
 
 Should not be used together with Resteasy plugin
 

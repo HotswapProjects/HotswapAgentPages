@@ -6,6 +6,8 @@ folder: doc
 toc: false
 ---
 
+## Version 0.4.0
+
 ### New frameworks / JVM plugins:
 
 * ClassInit - enhance DCEVM by static variables + enum values initialization

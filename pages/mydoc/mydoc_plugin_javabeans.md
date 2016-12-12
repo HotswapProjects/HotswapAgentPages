@@ -5,7 +5,7 @@ permalink: mydoc_plugin_javabeans.html
 folder: doc
 toc: false
 ---
-Solves purging Introspector cache in appropriate thread groups for all particular plugins.
+Clear Introspector cache in appropriate thread groups. Introspector cache is used for reflection data caching.
 
 #### Implementation notes:
 Cache cleanup is triggered on any class redefinition.
