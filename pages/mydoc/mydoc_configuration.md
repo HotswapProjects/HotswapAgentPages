@@ -3,7 +3,7 @@ title: Configuration
 sidebar: mydoc_sidebar
 permalink: mydoc_configuration.html
 folder: mydoc
-toc: true
+toc: false
 ---
 ### hotswap-agent.properties
 Main Hotswap Agent (HA) configuration file. You can create an empty file or start with [commented content](https://github.com/HotswapProjects/HotswapAgent/blob/master/hotswap-agent-core/src/main/resources/hotswap-agent.properties).
