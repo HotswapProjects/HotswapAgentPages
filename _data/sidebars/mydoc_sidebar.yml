@@ -32,6 +32,10 @@ entries:
       url: /mydoc_quickstart.html
       output: web, pdf
 
+    - title: Configuration
+      url: /mydoc_configuration.html
+      output: web, pdf
+
   - title: Release Notes
     output: web, pdf
     folderitems:

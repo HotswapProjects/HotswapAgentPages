@@ -16,5 +16,7 @@ topnav_dropdowns:
           external_url: https://github.com/HotswapProjects/HotswapAgent
         - title: DCEVM github Repo
           external_url: https://github.com/dcevm/dcevm
+        - title: HotswapAgent Forum
+          external_url: https://groups.google.com/forum/#!forum/hotswapagent
         - title: HotswapAgent on Stack Overflow
           external_url: http://stackoverflow.com/questions/tagged/hotswapagent
