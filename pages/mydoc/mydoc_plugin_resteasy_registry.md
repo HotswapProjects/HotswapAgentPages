@@ -2,7 +2,7 @@
 title: Resteasy Plugin
 sidebar: mydoc_sidebar
 permalink: mydoc_plugin_resteasy_registry.html
-folder: doc
+folder: mydoc
 toc: false
 ---
 

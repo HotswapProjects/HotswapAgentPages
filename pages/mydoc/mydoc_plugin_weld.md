@@ -2,7 +2,7 @@
 title: Weld/CDI Plugin
 sidebar: mydoc_sidebar
 permalink: mydoc_plugin_weld.html
-folder: doc
+folder: mydoc
 toc: false
 ---
 

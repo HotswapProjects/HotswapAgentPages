@@ -2,7 +2,7 @@
 title: JBoss modules Plugin
 sidebar: mydoc_sidebar
 permalink: mydoc_plugin_jbossmodules.html
-folder: doc
+folder: mydoc
 toc: false
 ---
 

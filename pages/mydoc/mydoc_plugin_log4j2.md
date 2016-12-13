@@ -2,7 +2,7 @@
 title: Log4j2 Plugin
 sidebar: mydoc_sidebar
 permalink: mydoc_plugin_log4j2.html
-folder: doc
+folder: mydoc
 toc: false
 ---
 

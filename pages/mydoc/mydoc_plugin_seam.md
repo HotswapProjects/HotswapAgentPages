@@ -2,7 +2,7 @@
 title: Seam Plugin
 sidebar: mydoc_sidebar
 permalink: mydoc_plugin_seam.html
-folder: doc
+folder: mydoc
 toc: false
 ---
 

@@ -2,7 +2,7 @@
 title: ZK Framework Plugin
 sidebar: mydoc_sidebar
 permalink: mydoc_plugin_zk.html
-folder: doc
+folder: mydoc
 toc: false
 ---
 

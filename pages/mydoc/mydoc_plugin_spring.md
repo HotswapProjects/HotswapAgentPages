@@ -2,7 +2,7 @@
 title: Spring Plugin
 sidebar: mydoc_sidebar
 permalink: mydoc_plugin_spring.html
-folder: doc
+folder: mydoc
 toc: false
 ---
 

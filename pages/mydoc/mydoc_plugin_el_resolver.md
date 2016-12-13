@@ -2,7 +2,7 @@
 title: EL-Resolver Plugin
 sidebar: mydoc_sidebar
 permalink: mydoc_plugin_el_resolver.html
-folder: doc
+folder: mydoc
 toc: false
 ---
 

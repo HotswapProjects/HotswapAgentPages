@@ -2,7 +2,7 @@
 title: Tomcat Plugin
 sidebar: mydoc_sidebar
 permalink: mydoc_plugin_tomcat.html
-folder: doc
+folder: mydoc
 toc: false
 ---
 

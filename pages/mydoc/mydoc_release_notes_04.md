@@ -2,7 +2,7 @@
 title: Release Notes v0.4
 sidebar: mydoc_sidebar
 permalink: mydoc_release_notes_04.html
-folder: doc
+folder: mydoc
 toc: false
 ---
 

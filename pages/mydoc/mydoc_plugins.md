@@ -48,5 +48,3 @@ uses agent services to:
 * [ClassInit]({{ site.data.mydoc_plugin_class_init.link }}) - initializes new static members/enum values after class/enum redefinition and keeps surviving static values. (Fix of known DCEVM)
 * [Hotswapper]({{ site.data.mydoc_plugin_hotswapper.link }}) - Watch for any class file change and reload (hotswap) it on the fly via Java Platform Debugger Architecture (JPDA)
 * [Proxy]({{ site.data.mydoc_plugin_proxy.link }}) (supported com.sun.proxy, CGlib) - redefines proxy classes that implement or extend changed interfaces or classes.
-
-Find a detail documentation of each plugin in the plugin project main README.md file.

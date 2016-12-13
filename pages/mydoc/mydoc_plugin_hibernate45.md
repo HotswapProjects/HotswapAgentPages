@@ -2,7 +2,7 @@
 title: Hibernate v4 + v5 Plugin
 sidebar: mydoc_sidebar
 permalink: mydoc_plugin_hibernate45.html
-folder: doc
+folder: mydoc
 toc: false
 ---
 Reload Hibernate (4+5) EntityManagerFactory / SessionFactory after entity class definition/change.

@@ -2,7 +2,7 @@
 title: Deltaspike Plugin
 sidebar: mydoc_sidebar
 permalink: mydoc_plugin_deltaspike.html
-folder: doc
+folder: mydoc
 toc: false
 ---
 Reload instances following on appropriate class redefinition:

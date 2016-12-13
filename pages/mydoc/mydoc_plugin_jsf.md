@@ -2,7 +2,7 @@
 title: JSF Plugin
 sidebar: mydoc_sidebar
 permalink: mydoc_plugin_jsf.html
-folder: doc
+folder: mydoc
 toc: false
 ---
 

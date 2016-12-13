@@ -2,7 +2,7 @@
 title: Hibernate v3 Plugin
 sidebar: mydoc_sidebar
 permalink: mydoc_plugin_hibernate3.html
-folder: doc
+folder: mydoc
 toc: false
 ---
 Reload Hibernate3 EntityManagerFactory / SessionFactory after entity class definition/change.

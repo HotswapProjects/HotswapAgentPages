@@ -2,7 +2,7 @@
 title: Jetty Plugin
 sidebar: mydoc_sidebar
 permalink: mydoc_plugin_jetty.html
-folder: doc
+folder: mydoc
 toc: false
 ---
 

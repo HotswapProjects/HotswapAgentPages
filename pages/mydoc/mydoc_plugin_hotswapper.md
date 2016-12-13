@@ -2,7 +2,7 @@
 title: Hotswapper Plugin
 sidebar: mydoc_sidebar
 permalink: mydoc_plugin_hotswapper.html
-folder: doc
+folder: mydoc
 toc: false
 ---
 Watch for any class file change and reload (hotswap) it on the fly.

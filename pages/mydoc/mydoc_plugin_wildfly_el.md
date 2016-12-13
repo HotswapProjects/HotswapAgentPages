@@ -2,7 +2,7 @@
 title: WildFly-El-Resolver Plugin
 sidebar: mydoc_sidebar
 permalink: mydoc_plugin_wildfly_el.html
-folder: doc
+folder: mydoc
 toc: false
 ---
 

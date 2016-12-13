@@ -2,7 +2,7 @@
 title: Class Init Plugin
 sidebar: mydoc_sidebar
 permalink: mydoc_plugin_class_init.html
-folder: doc
+folder: mydoc
 toc: false
 ---
 

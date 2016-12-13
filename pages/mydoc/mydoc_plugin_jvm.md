@@ -2,7 +2,7 @@
 title: Anonymous Class Patch
 sidebar: mydoc_sidebar
 permalink: mydoc_plugin_anonymous_class_patch.html
-folder: doc
+folder: mydoc
 toc: false
 ---
 This is a patch to resolve issues with anonymous classes hotswap.

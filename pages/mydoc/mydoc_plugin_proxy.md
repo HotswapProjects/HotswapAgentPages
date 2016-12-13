@@ -2,7 +2,7 @@
 title: Proxy Plugin
 sidebar: mydoc_sidebar
 permalink: mydoc_plugin_proxy.html
-folder: doc
+folder: mydoc
 toc: false
 ---
 

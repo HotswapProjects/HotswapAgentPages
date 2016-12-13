@@ -2,7 +2,7 @@
 title: Equinox (OSGI)/ Eclipse Plugin
 sidebar: mydoc_sidebar
 permalink: mydoc_plugin_osgiequinox.html
-folder: doc
+folder: mydoc
 toc: false
 ---
 

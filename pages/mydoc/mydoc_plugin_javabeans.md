@@ -2,7 +2,7 @@
 title: JavaBeans Plugin
 sidebar: mydoc_sidebar
 permalink: mydoc_plugin_javabeans.html
-folder: doc
+folder: mydoc
 toc: false
 ---
 Clear Introspector cache in appropriate thread groups. Introspector cache is used for reflection data caching.

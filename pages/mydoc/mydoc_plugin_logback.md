@@ -2,7 +2,7 @@
 title: Logback Plugin
 sidebar: mydoc_sidebar
 permalink: mydoc_plugin_logback.html
-folder: doc
+folder: mydoc
 toc: false
 ---
 
