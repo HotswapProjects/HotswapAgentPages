@@ -44,7 +44,7 @@ entries:
       url: /mydoc_release_notes_04.html
       output: web, pdf
 
-  - title: Installation
+  - title: IDE setup
     output: web, pdf
     folderitems:
 
