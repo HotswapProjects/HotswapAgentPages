@@ -6,7 +6,7 @@ folder: mydoc
 toc: false
 ---
 
-**Step-1:** In Eclipse setup `Runtime Environment` (Tomcat Server in this example) - JRE must be mapped to the same JRE of JDK in which DCEVM is patched (look at [quick start][mydoc_quickstart] how to setup DCEVM).
+**Step-1:** In "Runtime Environment" (here for Tomcat) - JRE must be mapped to the same JRE of JDK in which DCEVM is patched (look at [quick start][mydoc_quickstart] how to setup DCEVM).
 
 {% include image.html file="EclipseSetup-01.png" %}
 
