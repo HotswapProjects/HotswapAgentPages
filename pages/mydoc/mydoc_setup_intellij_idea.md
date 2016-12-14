@@ -14,7 +14,7 @@ You can always run Compile file (CTRL+SHIFT+F9) or Build project (CTRL+F9) manua
 
 **Enable automatic Hotswap after compile**
 {% include image.html file="IdeaSetup-05.png" %}
-If you don?t enable this feature, you will need to hotswap changes manually by Run -> Reload changed files.
+If you don't enable this feature, you will need to hotswap changes manually by Run -> Reload changed files.
 
 **Maven Run/Debug configuration**
 If you run your project with a maven action (usually a plugin like maven-jetty-plugin or maven-tomcat-plugin), use standard setup:
