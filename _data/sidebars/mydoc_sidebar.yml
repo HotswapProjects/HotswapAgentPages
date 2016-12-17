@@ -168,3 +168,9 @@ entries:
       url: /mydoc_plugin_tomcat.html
       output: web, pdf
 
+  - title: Extending HA
+    output: web, pdf
+    folderitems:
+    - title: Custom plugins
+      url: /mydoc_custom_plugins.html
+      output: web, pdf
