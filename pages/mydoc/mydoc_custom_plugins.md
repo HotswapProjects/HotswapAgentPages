@@ -19,6 +19,23 @@ as a javaagent. Maven dependency:
         </dependency>
 (Note that the JAR is not yet in central maven repository - you need to build it from source first).
 
-See [ExamplePlugin](https://github.com/HotswapProjects/HotswapAgentExamples/blob/master/SpringHibernate/src/main/java/org/hotswap/agent/it/plugin/ExamplePlugin.java)
+Example:
+
+        @Plugin(name = "MyPlugin")
+        public class MyPlugin {
+        
+            @OnClassLoadEvent(classNameRegexp = ".*", events = LoadEvent.REDEFINE)
+            public static void onAnyReload() {
+                MyCache.clear();
+            }
+        
+            @OnResourceFileEvent(path = "/", filter = ".*.resource")
+            public void onResourceChanged() {
+                MyResourceCache.clear();
+            }
+        }
+        
+        
+See [ExamplePlugin](https://github.com/HotswapProjects/HotswapAgentExamples/blob/master/custom-plugin/src/main/java/org/hotswap/agent/example/plugin/ExamplePlugin.java)
 (part of TestApplication) to go through a commented simple plugin. Read [agent readme](https://github.com/HotswapProjects/HotswapAgent/blob/master/README.md)
  to understand agent concepts. Check existing plugins source code for more examples.
