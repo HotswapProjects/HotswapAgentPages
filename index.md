@@ -16,7 +16,7 @@ Save&Reload during development should be standard and many other languages (incl
 
 ### Features
 In contrast to standard Java, where the hotswap is limited to in-body code changes, the DCEVM + HotswapAgent 
-hoswap allows following code changes:
+allow following code changes:
 
 * Add/remove/modify class fields.
 * Add/remove/modify methods. Add/remove/modify method annotations
