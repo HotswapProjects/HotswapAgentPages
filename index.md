@@ -20,7 +20,7 @@ allow following code changes:
 
 * Add/remove/modify class fields.
 * Add/remove/modify methods. Add/remove/modify method annotations
-* Add/remove/modify classes including inner classes. HotswapAgent handless correct inner class redefinitions.
+* Add/remove/modify classes including anonymous classes. HotswapAgent handless correct anonymous class redefinitions.
 * Add/remove static member of classes. HotswapAgent handles static member initialization.
 * Add/remove enum values
 * Refresh framework and application server settings
