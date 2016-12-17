@@ -101,5 +101,4 @@ description: "Java unlimited runtime class and resource redefinition."
 # needed for sitemap.xml file only
 url: http://hotswapagent.org
 
-site:
-  google_analytics: UA-89149423-1
+google_analytics: UA-89149423-1
