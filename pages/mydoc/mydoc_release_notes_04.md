@@ -6,7 +6,7 @@ folder: mydoc
 toc: false
 ---
 
-## Version 0.4.0
+## Version 1.0
 
 ### New frameworks / JVM plugins:
 
