@@ -11,7 +11,7 @@ toc: false
 
 **Enable automatic Hotswap after compile:**
 {% include image.html file="NetbeansSetup-02.png" %}
-If you don?t enable this feature, you will need to hotswap changes manually by 
+If you don't enable this feature, you will need to hotswap changes manually by 
 
 **Maven actions**
 If you run your project with a maven action (usually a plugin like maven-jetty-plugin or maven-tomcat-plugin) setup MAVEN_OPTS for an appropriate target.
