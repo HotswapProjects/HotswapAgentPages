@@ -23,6 +23,7 @@ allow following code changes:
 * Add/remove/modify classes including inner classes. HotswapAgent handless correct inner class redefinitions.
 * Add/remove static member of classes. HotswapAgent handles static member initialization.
 * Add/remove enum values
+* Refresh framework and application server settings
 
 The only unsupported operation is hierarchy change (change the superclass or remove an interface). 
 
