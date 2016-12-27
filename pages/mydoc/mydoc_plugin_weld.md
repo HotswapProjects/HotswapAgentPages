@@ -29,7 +29,7 @@ change. On other hand it leads to recreation of session beans and lost of sessio
 * `METHOD_SIGNATURE` reload bean if any method or field is added (including constructors) or existing method or field signature is changed. 
 It also includes changes of class signature. Any class, field or method annotation is included into signature evaluation as well.
 * `FIELD_SIGNATURE_CHANGE` reload bean if any field is added or existing field signature is changed. Briefly speaking if a class data is changed.
-* 'NEVER' is default strategy and less invasive one. It lefts the responsibility of bean reloading to developer himself. It can lead to session 
+* `NEVER` is default strategy and less invasive one. It lefts the responsibility of bean reloading to developer himself. It can lead to session 
 or application bean inconsistence. Experienced developer knows the best when the bean modification leads to inconsistent state and should 
 be capable to manage bean reloading himself. 
 
