@@ -19,5 +19,3 @@ in each supported implementation. Plugin initialization is triggered at the end 
 constructor. Method `__resetCache` is inserted into `javax.el.BeanELResolver` class. This method is called
 by `org.hotswap.agent.plugin.elresolver.PurgeBeanELResolverCacheCommand` on any class redefinition.
 
-## TODO:
-* Support for another EL implementations

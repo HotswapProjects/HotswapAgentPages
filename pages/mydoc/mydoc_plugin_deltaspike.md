@@ -22,5 +22,3 @@ Plugin registers itselfs in following class instances initialization:
 * `org.apache.deltaspike.data.impl.meta.RepositoryComponent`
 * `org.apache.deltaspike.jsf.impl.config.view.ViewConfigExtension`
 
-## TODO:
-* Possibly support for other modules

@@ -20,7 +20,3 @@ Setup extraClasspath property in hotswap-agent.properties.
     # Note that there must be a plugin that will provide actual replacement such as JettyPlugin for Jetty servlet container.
     extraClasspath=
 
-
-#### Implementation notes:
-
-

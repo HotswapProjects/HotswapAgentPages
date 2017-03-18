@@ -41,5 +41,4 @@ created. Each instance of ProxyFactory is registered in WeldPlugin in registered
 proxy factory instance is found and that is forced to recreate proxy class.
 
 # TODO:
-If a
-new proxy class is created than weld creates common beans instead proxied beans.
+If a new proxy class is created than weld creates common beans instead proxied beans.
