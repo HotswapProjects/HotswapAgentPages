@@ -6,7 +6,7 @@ folder: mydoc
 toc: false
 ---
 ## Start with HotSwapAgent plugin for IntelliJ IDEA.
-###steps:
+### steps:
 1. Install HotSwapAgent [plugin](https://plugins.jetbrains.com/plugin/9552-hotswapagent) for IntelliJ IDEA.  {% include image.html file="IdeaPlugin-01.png" %}
 2. Enable HotSwapAgent plugin for all configurations (or one by one).  {% include image.html file="IdeaPlugin-02.png" %}
 3. You will see HOTSWAP AGENT notification in your console in case if setup was correctly done.  {% include image.html file="IdeaPlugin-03.png" %}
