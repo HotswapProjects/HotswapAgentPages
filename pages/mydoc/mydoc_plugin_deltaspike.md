@@ -11,7 +11,7 @@ Reload instances following on appropriate class redefinition:
 * Partial Bean
 * Messages + JsfMessages
 * Repository component in DeltaSpike data module.
-* Veiw Config
+* View Config
 
 #### Implementation notes:
 Plugin registers itselfs in following class instances initialization:
