@@ -40,8 +40,8 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: 1.0 Release notes
-      url: /mydoc_release_notes_10.html
+    - title: 1.2.0 Release notes
+      url: /mydoc_release_notes_12.html
       output: web, pdf
 
   - title: IDE setup
