@@ -23,9 +23,9 @@ The most important configuration property is 'extraClasspath'. Set comma seperat
 Example: `extraClasspath=target/classes;../my-other-project/classes;C:/libs/gui/classes`
 
 Multiline form:
-`extraClasspath=/my-other-project1/classes;\`
-`/my-other-project2/classes;\`
-`/my-other-project3/classes;\`
+`extraClasspath=/my-other-project1/classes; \` 
+`/my-other-project2/classes; \` 
+`/my-other-project3/classes; \` 
 `/my-other-project4/classes;`
 
 Watch resources is similar to extraClasspath, however it will use a resource from this path only after it is modified after application
