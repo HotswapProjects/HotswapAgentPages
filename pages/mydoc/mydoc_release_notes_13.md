@@ -15,22 +15,22 @@ toc: false
    - All internal metadata caches are cleared whenever a class is changed
 
 ### New features:
-- HotswapAgent plugins may be included as a standard maven dependency #242 
+- [#242](https://github.com/HotswapProjects/HotswapAgent/issues/242)HotswapAgent plugins may be included as a standard maven dependency 
 
 ### Fixes:
 Agent Core:
-- ERROR (org.hotswap.agent.watch.nio.EventDispatcher) - No match for watch event #223
+- [#223](https://github.com/HotswapProjects/HotswapAgent/issues/223)ERROR (org.hotswap.agent.watch.nio.EventDispatcher) - No match for watch event
 
 Spring plugin:
-- Spring plugin registers a managed bean for a prototype bean #241
-- Spring Boot 2 projects throw NoSuchMethodException for __resetCache #221
-- Cannot create proxy for spring component without default constructor #232 
-- HotswapSpringCallback not serializable #243
+- [#241](https://github.com/HotswapProjects/HotswapAgent/issues/241)Spring plugin registers a managed bean for a prototype bean
+- [#221](https://github.com/HotswapProjects/HotswapAgent/issues/221)Spring Boot 2 projects throw NoSuchMethodException for __resetCache
+- [#232](https://github.com/HotswapProjects/HotswapAgent/issues/232)Cannot create proxy for spring component without default constructor
+- [#243](https://github.com/HotswapProjects/HotswapAgent/issues/243)HotswapSpringCallback not serializable
 
 JBoss plugin:
-- JBoss - Plugin not found in the registry, error on random classloader jars. #229
+- [#229](https://github.com/HotswapProjects/HotswapAgent/issues/229)JBoss - Plugin not found in the registry, error on random classloader jars.
 
 Other:
-- Autodeploy snapshot from master to Sonatype #236
-- Release to Maven #224 
-- maven central repos not include version 1.2.0 #234
+- [#236](https://github.com/HotswapProjects/HotswapAgent/issues/236)Autodeploy snapshot from master to Sonatype
+- [#224](https://github.com/HotswapProjects/HotswapAgent/issues/224)Release to Maven 
+- [#234](https://github.com/HotswapProjects/HotswapAgent/issues/234)maven central repos not include version 1.2.0
