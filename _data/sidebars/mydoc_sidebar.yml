@@ -186,3 +186,6 @@ entries:
     - title: Custom plugins
       url: /mydoc_custom_plugins.html
       output: web, pdf
+    - title: Hotswap Agent API
+      url: /mydoc_ha_api.html
+      output: web, pdf
