@@ -34,6 +34,7 @@ uses agent services to:
 * [WebObjects]({{ site.data.mydoc_plugin_webobjects.link }}) - Clear key value coding, component, action and validation caches after class change.
 * [Weld]({{ site.data.mydoc_plugin_weld.link }}) (CDI) (2.2-2.4) - reload bean class definition after class definition/change. Support for weld proxy, EAR. Beans can be reloaded according strategy defined in property file.
 * [WildFlyELResolver]({{ site.data.mydoc_plugin_wildfly_el.link }}) - Clear BeanELResolver after any class redefinition.
+* [Vaadin]({{ site.data.mydoc_plugin_vaadin.link }}) Vaadin Framework (https://vaadin.com) 
 * [ZK]({{ site.data.mydoc_plugin_zk.link }}) (5x-7x) - ZK Framework (http://www.zkoss.org/). Change library properties default values to disable caches, maintains Label cache and bean resolver cache.
 
 #### Servlet containers and application servers plugins:

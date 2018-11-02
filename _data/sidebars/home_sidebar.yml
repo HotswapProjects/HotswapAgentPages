@@ -5,9 +5,3 @@ entries:
   levels: one
   folders:
 
-  - title: News
-    output: web
-    folderitems:
-    - title: News
-      url: /news.html
-      output: web

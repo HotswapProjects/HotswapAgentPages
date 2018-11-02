@@ -12,12 +12,11 @@ agent JAR dependency to compile, but be careful NOT to add the JAR to your appli
 as a javaagent. Maven dependency:
 
         <dependency>
-            <groupId>org.hotswap.agent</groupId>
-            <artifactId>HotswapAgent</artifactId>
-            <version>${project.version}</version>
+            <groupId>org.hotswapagent</groupId>
+            <artifactId>hotswap-agent-core</artifactId>
+            <version>1.3.0</version>
             <scope>provided</scope>
         </dependency>
-(Note that the JAR is not yet in central maven repository - you need to build it from source first).
 
 Example:
 

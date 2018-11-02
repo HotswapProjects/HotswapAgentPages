@@ -40,8 +40,16 @@ entries:
     output: web, pdf
     folderitems:
 
+    - title: 1.3.0 Release notes
+      url: /mydoc_release_notes_13.html
+      output: web, pdf
+
     - title: 1.2.0 Release notes
       url: /mydoc_release_notes_12.html
+      output: web, pdf
+
+    - title: 1.0.0 Release notes
+      url: /mydoc_release_notes_10.html
       output: web, pdf
 
   - title: IDE setup
@@ -128,6 +136,10 @@ entries:
       url: /mydoc_plugin_wildfly_el.html
       output: web, pdf
 
+    - title: Vaadin
+      url: /mydoc_plugin_vaadin.html
+      output: web, pdf
+
     - title: ZK
       url: /mydoc_plugin_zk.html
       output: web, pdf
@@ -173,4 +185,7 @@ entries:
     folderitems:
     - title: Custom plugins
       url: /mydoc_custom_plugins.html
+      output: web, pdf
+    - title: Hotswap Agent API
+      url: /mydoc_ha_api.html
       output: web, pdf
