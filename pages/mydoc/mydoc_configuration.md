@@ -33,7 +33,7 @@ Watch resources is similar to extraClasspath, however it will use a resource fro
 startup. Sometimes it is not possible to point extraClasspath to your i.e. src/main/resources, because there are multiple replacements 
 of resources in a building step (maven filtering resource option). This setting will leave i.e. src/target/classes as default source for resources, 
 but after the resource is modified in src/main/resources, the new changed resource is served instead.
-Example: `extraClasspath=src/main/resources`
+Example: `watchResources=src/main/resources`
 
 #### webappDir
 Add a directory prior to webapp path (load webapp resources). Load web application resources (such as HTML, JSP, CSS, ...) from this directory 
