@@ -1,7 +1,7 @@
 ---
 title: Quick Start JDK 11
 sidebar: mydoc_sidebar
-permalink: mydoc_quickstart_jdk11.html
+permalink: mydoc_quickstart-jdk11.html
 folder: mydoc
 toc: false
 ---
