@@ -1,5 +1,5 @@
 ---
-title: Quick Start
+title: Quick Start JDK 8
 sidebar: mydoc_sidebar
 permalink: mydoc_quickstart.html
 folder: mydoc
