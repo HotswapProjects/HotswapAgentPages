@@ -32,16 +32,16 @@ servlet containers. Both projects used together forms excellent combination for 
 in Java but also in another JVM languages.
 
 ### Easy to start
-#### JDK 8
-Download and install latest [DCEVM Java patch](https://github.com/dcevm/dcevm/releases) +
-[agent jar](https://github.com/HotswapProjects/HotswapAgent/releases) and launch your application server
-with options `-XXaltjvm=dcevm -javaagent:hotswap-agent.jar` to get basic setup. You can attach [agent jar](https://github.com/HotswapProjects/HotswapAgent/releases) to the running JVM using the following example [code snippet](https://gist.github.com/xnike/a268fc209df52bf1bf09a268e97cef53). Optionally add hotswap-agent.properties to your application to configure plugins and agent behaviour.
-
 #### JDK 11
 Hotswap Agent is now bundled with DCEVM. Just download 
 [windows jdk-11-hotswap](https://github.com/HotswapProjects/openjdk-jdk11/releases/download/dcevm-11.0.beta/jdk-11-hotswap.zip)
 or [linux java-11-openjdk-hotswap.tgz](https://github.com/HotswapProjects/openjdk-jdk11/releases/download/dcevm-11.0.beta/java-11-openjdk-hotswap.tgz) 
 JDK, unpack it and set JAVA_HOME to it's location (or add it as JDK to your IDE).
+
+#### JDK 8
+Download and install latest [DCEVM Java patch](https://github.com/dcevm/dcevm/releases) +
+[agent jar](https://github.com/HotswapProjects/HotswapAgent/releases) and launch your application server
+with options `-XXaltjvm=dcevm -javaagent:hotswap-agent.jar` to get basic setup. You can attach [agent jar](https://github.com/HotswapProjects/HotswapAgent/releases) to the running JVM using the following example [code snippet](https://gist.github.com/xnike/a268fc209df52bf1bf09a268e97cef53). Optionally add hotswap-agent.properties to your application to configure plugins and agent behaviour.
 
 ### Plugins
 Each application framework (Spring, Hibernate, Logback, ...) needs special reloading mechanism to keep
