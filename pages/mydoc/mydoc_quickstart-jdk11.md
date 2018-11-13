@@ -6,15 +6,17 @@ folder: mydoc
 toc: false
 ---
 ### Install
-Hotswap Agent is now bundled with DCEVM. Just download 
+Use *OpenJDK Hotswap* instead of standard JDK-11. Download
 [windows jdk-11-hotswap](https://github.com/HotswapProjects/openjdk-jdk11/releases/download/dcevm-11.0.beta/jdk-11-hotswap.zip)
 or [linux java-11-openjdk-hotswap.tgz](https://github.com/HotswapProjects/openjdk-jdk11/releases/download/dcevm-11.0.beta/java-11-openjdk-hotswap.tgz) 
-JDK, unpack it and set JAVA_HOME to it's location (or add it as JDK to your IDE).
+, unpack it and set JAVA_HOME to it's location (or add it as JDK to your IDE). 
 
 ### Configure
 1. Everything is configured for you, just run your application with downloaded JDK :-)
 1. (optional) create a file named "hotswap-agent.properties" inside your resources directory, see available properties and
   default values: <https://github.com/HotswapProjects/HotswapAgent/blob/master/hotswap-agent-core/src/main/resources/hotswap-agent.properties>
+
+### Run
 1. start the application in debug mode, check that the agent and plugins are initialized correctly:
 
         HOTSWAP AGENT: 9:49:29.548 INFO (org.hotswap.agent.HotswapAgent) - Loading Hotswap agent - unlimited runtime class redefinition.
