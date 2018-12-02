@@ -6,10 +6,7 @@ folder: mydoc
 toc: false
 ---
 ### Install
-Use *OpenJDK Hotswap* instead of standard JDK-11. Download
-[windows jdk-11-hotswap](https://github.com/HotswapProjects/openjdk-jdk11/releases/download/dcevm-11.0.beta/jdk-11-hotswap.zip)
-or [linux java-11-openjdk-hotswap.tgz](https://github.com/HotswapProjects/openjdk-jdk11/releases/download/dcevm-11.0.beta/java-11-openjdk-hotswap.tgz) 
-, unpack it and set JAVA_HOME to it's location (or add it as JDK to your IDE). 
+Use *OpenJDK Hotswap* instead of standard JDK-11. Download latest release of [trava-jdk-11-dcevm](https://github.com/TravaOpenJDK/trava-jdk-11-dcevm/releases), unpack it and set JAVA_HOME to it's location (or add it as JDK to your IDE). 
 
 ### Configure
 1. Everything is configured for you, just run your application with downloaded JDK :-)
