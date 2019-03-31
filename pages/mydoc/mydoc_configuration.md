@@ -17,7 +17,7 @@ You need to put hotswap-agent.properties file into application runtime classpath
 The hotswap-agent.properties file is loaded per classloader, e.g. each webapp may have seperate configuration.
 
 #### extraClaspath, watchResources
-The most important configuration property is 'extraClasspath'. Set comma seperated list of directories with additional java .class files.
+The most important configuration property is 'extraClasspath'. Set semicolon or comma separated list of directories with additional java .class files.
   These directories will be used prior standard classpath.
  
 Example: `extraClasspath=target/classes;../my-other-project/classes;C:/libs/gui/classes`
@@ -39,7 +39,7 @@ Example: `watchResources=src/main/resources`
 Add a directory prior to webapp path (load webapp resources). Load web application resources (such as HTML, JSP, CSS, ...) from this directory 
 prior to default processing.
 
-Example: `extraClasspath=src/main/webapp`
+Example: `webappDir=src/main/webapp`
 
 This property is currently supported only for Jetty and Tomcat servlet containers.
 
