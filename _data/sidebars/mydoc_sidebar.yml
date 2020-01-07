@@ -76,12 +76,20 @@ entries:
     output: web, pdf
     folderitems:
 
+    - title: CXF
+      url: /mydoc_plugin_cxf.html
+      output: web, pdf
+
     - title: DeltaSpike
       url: /mydoc_plugin_deltaspike.html
       output: web, pdf
 
     - title: ELResolver
       url: /mydoc_plugin_el_resolver.html
+      output: web, pdf
+
+    - title: FreeMarker
+      url: /mydoc_plugin_freemarker.html
       output: web, pdf
 
     - title: Hibernate 3
@@ -112,7 +120,15 @@ entries:
       url: /mydoc_plugin_log4j2.html
       output: web, pdf
 
-    - title: Equinox (osgi) eclipse
+    - title: MyBatis
+      url: /mydoc_plugin_mybatis.html
+      output: web, pdf
+
+    - title: OpenWebBeans
+      url: /mydoc_plugin_owb.html
+      output: web, pdf
+
+    - title: OsgiEquinox (eclipse)
       url: /mydoc_plugin_osgiequinox.html
       output: web, pdf
 
@@ -120,12 +136,12 @@ entries:
       url: /mydoc_plugin_resteasy_registry.html
       output: web, pdf
 
-    - title: Seam
-      url: /mydoc_plugin_seam.html
-      output: web, pdf
-
     - title: Spring
       url: /mydoc_plugin_spring.html
+      output: web, pdf
+
+    - title: Vaadin
+      url: /mydoc_plugin_vaadin.html
       output: web, pdf
 
     - title: WebObjects
@@ -136,12 +152,8 @@ entries:
       url: /mydoc_plugin_weld.html
       output: web, pdf
 
-    - title: WildFlyELResolver
-      url: /mydoc_plugin_wildfly_el.html
-      output: web, pdf
-
-    - title: Vaadin
-      url: /mydoc_plugin_vaadin.html
+    - title: Wicket
+      url: /mydoc_plugin_wicket.html
       output: web, pdf
 
     - title: ZK
@@ -184,7 +196,11 @@ entries:
       url: /mydoc_plugin_tomcat.html
       output: web, pdf
 
-  - title: Extending HA
+    - title: Undertow
+      url: /mydoc_plugin_undertow.html
+      output: web, pdf
+
+    - title: Extending HA
     output: web, pdf
     folderitems:
     - title: Custom plugins
