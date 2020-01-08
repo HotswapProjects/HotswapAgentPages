@@ -1,7 +1,7 @@
 ---
 title: Release Notes v1.4.0
 sidebar: mydoc_sidebar
-permalink: mydoc_release_notes_13.html
+permalink: mydoc_release_notes_14.html
 folder: mydoc
 toc: false
 ---
