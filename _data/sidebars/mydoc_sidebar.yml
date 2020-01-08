@@ -44,6 +44,10 @@ entries:
     output: web, pdf
     folderitems:
 
+    - title: 1.4.0 Release notes
+      url: /mydoc_release_notes_14.html
+      output: web, pdf
+
     - title: 1.3.0 Release notes
       url: /mydoc_release_notes_13.html
       output: web, pdf
