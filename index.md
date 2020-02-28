@@ -33,10 +33,7 @@ in Java but also in another JVM languages.
 
 ### Easy to start
 #### JDK 11
-Hotswap Agent is now bundled with DCEVM. Just download 
-[windows jdk-11-hotswap](https://github.com/HotswapProjects/openjdk-jdk11/releases/download/dcevm-11.0.beta/jdk-11-hotswap.zip)
-or [linux java-11-openjdk-hotswap.tgz](https://github.com/HotswapProjects/openjdk-jdk11/releases/download/dcevm-11.0.beta/java-11-openjdk-hotswap.tgz) 
-JDK, unpack it and set JAVA_HOME to it's location (or add it as JDK to your IDE).
+Hotswap Agent is now bundled with DCEVM. Just download [latest release of trava-jdk-11-dcevm](https://github.com/TravaOpenJDK/trava-jdk-11-dcevm/releases) JDK, unpack it and set JAVA_HOME to it's location (or add it as JDK to your IDE).
 
 #### JDK 8
 Download and install latest [DCEVM Java patch](https://github.com/dcevm/dcevm/releases) +
