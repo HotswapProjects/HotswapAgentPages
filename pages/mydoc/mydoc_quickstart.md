@@ -20,6 +20,7 @@ need to replace PATH_TO_AGENT with an actual) directory. For example `java -XXal
   and [Netbeans][mydoc_setup_netbeans] for IDE specific setup guides. If your application is already running, you still can attach agent jar using the example [code snippet](https://gist.github.com/xnike/a268fc209df52bf1bf09a268e97cef53).
 1. (optional) create a file named "hotswap-agent.properties" inside your resources directory, see available properties and
   default values: <https://github.com/HotswapProjects/HotswapAgent/blob/master/hotswap-agent-core/src/main/resources/hotswap-agent.properties>
+1. (optional) in case you are not using `autoHotswap=true` and therefore not using the hotswapping mechanism provided by HotswapAgent, you may want to add `-XX:TraceRedefineClasses=1` as an additional JVM argument in order to get feedback about reloaded classes.
 1. start the application in debug mode, check that the agent and plugins are initialized correctly:
 
         HOTSWAP AGENT: 9:49:29.548 INFO (org.hotswap.agent.HotswapAgent) - Loading Hotswap agent - unlimited runtime class redefinition.
