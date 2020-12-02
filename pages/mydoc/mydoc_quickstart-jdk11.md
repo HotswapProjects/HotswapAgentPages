@@ -12,6 +12,7 @@ Use *OpenJDK Hotswap* instead of standard JDK-11. Download latest release of [tr
 1. Everything is configured for you, just run your application with downloaded JDK :-)
 1. (optional) create a file named "hotswap-agent.properties" inside your resources directory, see available properties and
   default values: <https://github.com/HotswapProjects/HotswapAgent/blob/master/hotswap-agent-core/src/main/resources/hotswap-agent.properties>
+1. (optional) in case you are not using `autoHotswap=true` and therefore not using the hotswapping mechanism provided by HotswapAgent, you may want to add `-Xlog:redefine+class*=info` as an additional JVM argument in order to get feedback about reloaded classes.
 
 ### Run
 1. start the application in debug mode, check that the agent and plugins are initialized correctly:
