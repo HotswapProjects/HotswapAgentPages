@@ -11,7 +11,7 @@ The plugin hooks for initialization into `org.hibernate.ejb.HibernatePersistence
 `org.hibernate.cfg.Configuration` (for plain Hibernate) to wrap `javax.persistence.EntityManagerFactory` or
 `org.hibernate.SessionFactory` with a proxy. All clients then obtain reference for the proxy only.
 
-Hibernte plugin listens for a change and hotswap on all classes on classpath. If the class contains
+Hibernate plugin listens for a change and hotswap on all classes on classpath. If the class contains
 `@javax.persistence.Entity` annotation, whole Hibernate configuration is reloaded and target factory is
 swapped in the proxy.
 
