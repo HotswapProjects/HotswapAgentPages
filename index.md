@@ -16,7 +16,7 @@ Save&Reload during development should be standard and many other languages (incl
 
 ### Features
 In contrast to standard Java, where the hotswap is limited to in-body code changes, the DCEVM + HotswapAgent 
-allow following code changes:
+allow the following code changes:
 
 * Add/remove/modify class fields.
 * Add/remove/modify methods. Add/remove/modify method annotations
@@ -27,8 +27,8 @@ allow following code changes:
 
 The only unsupported operation is hierarchy change (change the superclass or remove an interface). 
 
-DCEVM realizes hotswap on JVM level. HotwapAgent does the same on level of Java frameworks and 
-servlet containers. Both projects used together forms excellent combination for daily development not only
+DCEVM realizes hotswap on JVM level. HotswapAgent does the same on the level of Java frameworks and 
+servlet containers. Both projects used together form an excellent combination for daily development not only
 in Java but also in another JVM languages.
 
 ### Easy to start
@@ -41,10 +41,10 @@ Download and install latest [DCEVM Java patch](https://github.com/dcevm/dcevm/re
 with options `-XXaltjvm=dcevm -javaagent:hotswap-agent.jar` to get basic setup. You can attach [agent jar](https://github.com/HotswapProjects/HotswapAgent/releases) to the running JVM using the following example [code snippet](https://gist.github.com/xnike/a268fc209df52bf1bf09a268e97cef53). Optionally add hotswap-agent.properties to your application to configure plugins and agent behaviour.
 
 ### Plugins
-Each application framework (Spring, Hibernate, Logback, ...) needs special reloading mechanism to keep
-up-to-date after class redefinition (e.g. Hibernate configuration reload after new entity class is introduced).
+Each application framework (Spring, Hibernate, Logback, ...) needs special reloading mechanisms to keep everything
+up-to-date after class redefinition (e.g. Hibernate configuration reload after a new entity class is introduced).
 Hotswap agent works as a plugin system and ships preconfigured with all major framework plugins. It is easy
-to write your custom plugin even as part of your application.
+to write your own custom plugin for your application, if needed.
 
 ### Contribute
 This project is very complex due to lot of supported frameworks and various versions. Community contribution
