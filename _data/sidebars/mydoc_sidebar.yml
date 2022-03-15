@@ -32,7 +32,7 @@ entries:
       url: /mydoc_quickstart-jdk17.html
       output: web, pdf
 
-      - title: Quick Start JDK 11
+    - title: Quick Start JDK 11
       url: /mydoc_quickstart-jdk11.html
       output: web, pdf
 
