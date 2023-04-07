@@ -8,7 +8,7 @@ toc: false
 ### Install
 1. Download latest release of [Jetbrains Runtime 17](https://github.com/JetBrains/JetBrainsRuntime/releases), unpack it and set JAVA_HOME to it's location (or add it as JDK to your IDE). 
 1. Download [latest release of Hotswap agent jar](https://github.com/HotswapProjects/HotswapAgent/releases),
-unpack `hotswap-agent.jar` and copy it to `<JBR-install-directory>/lib/hotswap` folder
+unpack `hotswap-agent.jar` and copy it to `<JBR-install-directory>/lib/hotswap` folder. When using the agent, it's important to note that the file name in `lib/hotswap` folder should not contain the version name, and should instead use the plain `hotswap-agent.jar` filename.
 
 ### Configure
 1. Run your application with JBR using additional options: `-XX:+AllowEnhancedClassRedefinition -XX:HotswapAgent=fatjar`
