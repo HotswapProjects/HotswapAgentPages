@@ -8,7 +8,6 @@ toc: false
 
 ## Version 1.4.0
 
-### Fixes:
 ### Key features
 * Java11 support
 * Kotlin support - HotswapAgent + dcevm is succesfuly used on many Kotlin projects now

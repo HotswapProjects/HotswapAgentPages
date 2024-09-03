@@ -8,7 +8,6 @@ toc: false
 
 ## Version 2.0.0
 
-### Fixes:
 ### Key features
 * Java17/Java21 support
 * Jakarta support
@@ -30,7 +29,6 @@ toc: false
 
 
 ### Fixes:
-## Fixes
 * [#404](https://github.com/HotswapProjects/HotswapAgent/issues/404) - fix missing declaredMethodCache in java17
 * [#391](https://github.com/HotswapProjects/HotswapAgent/issues/391) - Proxy redefinition support in Weld3
 * [#355](https://github.com/HotswapProjects/HotswapAgent/issues/355) - VaadinPlugin does not work in hotswapagent 1.4.1 on Wildfly 19 on Windows 10
