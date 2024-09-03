@@ -48,6 +48,10 @@ entries:
     output: web, pdf
     folderitems:
 
+    - title: 2.0.0 Release notes
+      url: /mydoc_release_notes_20.html
+      output: web, pdf
+
     - title: 1.4.0 Release notes
       url: /mydoc_release_notes_14.html
       output: web, pdf
