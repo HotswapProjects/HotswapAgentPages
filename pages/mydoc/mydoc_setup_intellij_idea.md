@@ -7,16 +7,20 @@ toc: false
 ---
 ## Start with HotSwapAgent plugin for IntelliJ IDEA.
 ### steps:
-1. Install HotSwapAgent [plugin](https://plugins.jetbrains.com/plugin/9552-hotswapagent) for IntelliJ IDEA.  {% include image.html file="IdeaPlugin-01.png" %}
-2. Enable HotSwapAgent plugin for all configurations (or one by one).  {% include image.html file="IdeaPlugin-02.png" %}
-3. You will see HOTSWAP AGENT notification in your console in case if setup was correctly done.  {% include image.html file="IdeaPlugin-03.png" %}
+1. Install HotSwapHelper [plugin](https://plugins.jetbrains.com/plugin/25171-hotswaphelper) for IntelliJ IDEA.  {% include image.html file="HotSwapHelper-01.png" %}
+2. After install, there will have a debug with hotSwap action after debug action.  {% include image.html file="HotSwapHelper-02.png" %}
+3. After click the action,You will see HOTSWAP AGENT notification in your console in case if setup was correctly done.  {% include image.html file="IdeaPlugin-03.png" %}
 4. Be sure that you have `"Reload classes after compilation: Always"` ON in IntelliJ IDEA in HotSwap section in your IDEA preferences.  {% include image.html file="IdeaPlugin-04.png" %}
 5. To re-deploying changed classes in IDEA press keys combination (: `Command+Shift+F9`/ ⊞: `Ctrl+Shift+F9`)
 
 ### Happy:heart: HotSwapping!
 1. `change` method name & then press (: `Command+Shift+F9`/ ⊞: `Ctrl+Shift+F9`) {% include image.html file="IdeaPlugin-05.gif" %}
 2. `add new` method & then press (: `Command+Shift+F9`/ ⊞: `Ctrl+Shift+F9`) {% include image.html file="IdeaPlugin-06.gif" %}
+3. change multiple class or xml, press (⌘: `Command+F9`/ ⊞: `Ctrl+F9`) or use build module.
 
+### Provide external agent file
+
+1. In Setting -> HotSwapHelper set use external agent file path.  {% include image.html file="HotSwapHelper-03.png" %}
 
 
 ## Other way: it's explicit agent configuration without plugin.
