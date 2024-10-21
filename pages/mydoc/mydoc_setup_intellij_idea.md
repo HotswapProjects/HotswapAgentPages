@@ -18,7 +18,7 @@ toc: false
 2. `add new` method & then press (: `Command+Shift+F9`/ ⊞: `Ctrl+Shift+F9`) {% include image.html file="IdeaPlugin-06.gif" %}
 3. change multiple class or xml, press (⌘: `Command+F9`/ ⊞: `Ctrl+F9`) or use build module.
 
-### Provide external agent file
+### Provide external agent file, the plugin has bundled one agent file, if you want to use your own agent file.
 
 1. In Setting -> HotSwapHelper set use external agent file path.  {% include image.html file="HotSwapHelper-03.png" %}
 
