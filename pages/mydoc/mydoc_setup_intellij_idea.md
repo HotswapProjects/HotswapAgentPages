@@ -5,7 +5,11 @@ permalink: mydoc_setup_intellij_idea.html
 folder: mydoc
 toc: false
 ---
-## Start with HotSwapAgent plugin for IntelliJ IDEA.
+## Start with HotSwapHelper plugin for IntelliJ IDEA.
+
+### The plugin will automatically add vm option for hotSwapAgent part for you.
+### Plugin source code: [github](https://github.com/gejun123456/HotSwapHelper)
+
 ### steps:
 1. Install HotSwapHelper [plugin](https://plugins.jetbrains.com/plugin/25171-hotswaphelper) for IntelliJ IDEA.  {% include image.html file="HotSwapHelper-01.png" %}
 2. After install, there will have a debug with hotSwap action after debug action.  {% include image.html file="HotSwapHelper-02.png" %}
