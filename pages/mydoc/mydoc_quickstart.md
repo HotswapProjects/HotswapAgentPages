@@ -7,7 +7,8 @@ toc: false
 ---
 ### Install
 1. download [latest release of DCEVM Java patch](https://github.com/dcevm/dcevm/releases) and launch the installer
-(e.g. `java -jar installer-light.jar`). Currently you need to select correct installer for Java major version (7/8).
+(e.g. `java -jar installer-light.jar`). **Important** Currently you need to select correct installer for Java major version (7/8).
+For example, if you're downloading **DCEVM for Java 8u181**, ensure that your installed JDK version is also Java 8u181 — the installer requires an exact match with the JDK version.
 1. select java installation directory on your disc and press "Install DCEVM as altjvm" button. Java 1.7+ versions are supported.
  Be sure to have write access to the java installation directory (on Windows: Start > cmd > right click > run as administrator).
 1. download [latest release of Hotswap agent jar](https://github.com/HotswapProjects/HotswapAgent/releases),
