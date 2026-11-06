@@ -41,7 +41,16 @@ prior to default processing.
 
 Example: `webappDir=src/main/webapp`
 
-This property is currently supported only for Jetty and Tomcat servlet containers.
+This property is supported for Jetty, Tomcat and Undertow (WildFly). It accepts more directories separated by `;` or `,`.
+
+#### Paths and system properties
+A relative path in extraClasspath, watchResources or webappDir is resolved against the working directory of the JVM
+(e.g. the server directory), not against the project. If the relative examples above do not work for your server, use absolute paths.
+
+`${name}` in a property value is replaced with the JVM system property `name`. Maven properties such as `${basedir}` are not
+available at runtime. To set the project location only once, start the JVM with e.g. `-Dproject.dir=/home/devel/myApp` and use
+
+`webappDir=${project.dir}/web/src/main/webapp;${project.dir}/module-a/src/main/resources/META-INF/resources`
 
 ### Standard setup
 
