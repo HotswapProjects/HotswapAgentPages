@@ -1,0 +1,21 @@
+# HotswapAgent
+
+> HotswapAgent is a Java agent for unlimited runtime class and resource redefinition. Together with a JVM that supports
+> enhanced class redefinition (JetBrains Runtime 17+, DCEVM) it reloads changed classes in a running application and
+> refreshes frameworks (Spring, Hibernate, CDI, JSF, servlet containers, ...) without a restart.
+
+## Docs
+
+- [Quick Start JDK 17+](https://hotswapagent.org/mydoc_quickstart-jdk17.html): JetBrains Runtime setup, `-XX:HotswapAgent` modes
+- [Configuration](https://hotswapagent.org/mydoc_configuration.html): `hotswap-agent.properties`, agent options, system properties
+- [Using HotswapAgent with AI coding agents](https://hotswapagent.org/mydoc_ai_agents.html): autoHotswap workflow for coding agents
+- [Plugins](https://hotswapagent.org/mydoc_plugins.html): supported frameworks and servers
+- [Custom plugins](https://hotswapagent.org/mydoc_custom_plugins.html): writing your own plugin
+
+## Agent skill
+
+- [hotswap-agent SKILL.md](https://raw.githubusercontent.com/HotswapProjects/HotswapAgentPages/gh-pages/skills/hotswap-agent/SKILL.md): instructions for coding agents in the Agent Skills format
+
+## Source
+
+- [HotswapAgent on GitHub](https://github.com/HotswapProjects/HotswapAgent): source code, issues, releases
