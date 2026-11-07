@@ -48,6 +48,14 @@ entries:
     output: web, pdf
     folderitems:
 
+    - title: AI coding agents
+      url: /mydoc_ai_agents.html
+      output: web, pdf
+
+  - title: Release Notes
+    output: web, pdf
+    folderitems:
+
     - title: 2.0.4 Release notes
       url: /mydoc_release_notes_204.html
       output: web, pdf
