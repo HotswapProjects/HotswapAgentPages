@@ -1,20 +1,32 @@
 ---
-title: Quick Start JDK 17
+title: Quick Start JDK 17+
 sidebar: mydoc_sidebar
 permalink: mydoc_quickstart-jdk17.html
 folder: mydoc
 toc: false
 ---
 ### Install
-1. Download latest release of [Jetbrains Runtime 17](https://github.com/JetBrains/JetBrainsRuntime/releases), unpack it and set JAVA_HOME to it's location (or add it as JDK to your IDE). 
-1. Download [latest release of Hotswap agent jar](https://github.com/HotswapProjects/HotswapAgent/releases),
-unpack `hotswap-agent.jar` and copy it to `<JBR-install-directory>/lib/hotswap` folder. When using the agent, it's important to note that the file name in `lib/hotswap` folder should not contain the version name, and should instead use the plain `hotswap-agent.jar` filename.
+1. Download the latest release of [JetBrains Runtime](https://github.com/JetBrains/JetBrainsRuntime/releases) 17, 21 or 25
+for your platform, unpack it and set JAVA_HOME to its location (or add it as JDK to your IDE). JetBrains Runtime supports
+enhanced class redefinition. To check it, run `java -XX:+AllowEnhancedClassRedefinition -version`, it fails if the JVM does not support it.
+1. Download the [latest release of the Hotswap agent jar](https://github.com/HotswapProjects/HotswapAgent/releases)
+and copy it as `<JBR-install-directory>/lib/hotswap/hotswap-agent.jar` (create the `lib/hotswap` folder if it does not exist).
+The file name must be `hotswap-agent.jar`, without the version.
 
 ### Configure
 1. Run your application with JBR using additional options: `-XX:+AllowEnhancedClassRedefinition -XX:HotswapAgent=fatjar`
 1. (optional) create a file named "hotswap-agent.properties" inside your resources directory, see available properties and
   default values: <https://github.com/HotswapProjects/HotswapAgent/blob/master/hotswap-agent-core/src/main/resources/hotswap-agent.properties>
 1. (optional) in case you are not using `autoHotswap=true` and therefore not using the hotswapping mechanism provided by HotswapAgent, you may want to add `-Xlog:redefine+class*=info` as an additional JVM argument in order to get feedback about reloaded classes.
+
+#### -XX:HotswapAgent modes
+* `fatjar` - the JVM loads `<JBR>/lib/hotswap/hotswap-agent.jar` with all plugins.
+* `core` - the JVM loads `<JBR>/lib/hotswap/hotswap-agent-core.jar`, the agent with core plugins only (e.g. Hotswapper, JDK, anonymous classes), without framework plugins.
+* `external` - the JVM only prepares the module access for the agent, the agent is added with `-javaagent:/path/to/hotswap-agent.jar`.
+  Use this mode to use an agent jar from another location.
+* `disabled` - no agent (default).
+
+Use only one way to load the agent. With `-XX:HotswapAgent=fatjar` (or `core`) do not add `-javaagent:hotswap-agent.jar`, otherwise the agent is loaded twice.
 
 ### Run
 1. start the application in debug mode, check that the agent and plugins are initialized correctly:

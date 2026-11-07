@@ -7,7 +7,7 @@ permalink: index.html
 summary:
 toc: false
 ---
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/HotswapProjects/user) [![Build Status](https://travis-ci.org/HotswapProjects/HotswapAgent.svg?branch=master)](https://travis-ci.org/HotswapProjects/HotswapAgent)
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/HotswapProjects/user) [![Build Status](https://github.com/HotswapProjects/HotswapAgent/actions/workflows/maven.yml/badge.svg?branch=master)](https://github.com/HotswapProjects/HotswapAgent/actions/workflows/maven.yml)
 
 Java unlimited runtime class and resource redefinition.
 
@@ -15,25 +15,32 @@ The main purpose of this project is to avoid infamous _change -> restart&*wait* 
 Save&Reload during development should be standard and many other languages (including C#) contain this feature.
 
 ### Features
-In contrast to standard Java, where the hotswap is limited to in-body code changes, the DCEVM + HotswapAgent 
-allow the following code changes:
+In contrast to standard Java, where the hotswap is limited to in-body code changes, a JVM with enhanced class redefinition
+(JetBrains Runtime or DCEVM) + HotswapAgent allow the following code changes:
 
 * Add/remove/modify class fields.
 * Add/remove/modify methods. Add/remove/modify method annotations
-* Add/remove/modify classes including anonymous classes. HotswapAgent handless correct anonymous class redefinitions.
+* Add/remove/modify classes including anonymous classes. HotswapAgent handles correct anonymous class redefinitions.
 * Add/remove static member of classes. HotswapAgent handles static member initialization.
 * Add/remove enum values
 * Refresh framework and application server settings
 
 The only unsupported operation is hierarchy change (change the superclass or remove an interface). 
 
-DCEVM realizes hotswap on JVM level. HotswapAgent does the same on the level of Java frameworks and 
+The JVM (JetBrains Runtime or DCEVM) realizes hotswap on JVM level. HotswapAgent does the same on the level of Java frameworks and 
 servlet containers. Both projects used together form an excellent combination for daily development not only
 in Java but also in another JVM languages.
 
 ### Easy to start
+#### JDK 17 and newer
+Download [JetBrains Runtime (JBR)](https://github.com/JetBrains/JetBrainsRuntime/releases) 17, 21 or 25 and copy the
+[agent jar](https://github.com/HotswapProjects/HotswapAgent/releases) to `<JBR>/lib/hotswap/hotswap-agent.jar`.
+Launch your application with options `-XX:+AllowEnhancedClassRedefinition -XX:HotswapAgent=fatjar`.
+See [Quick Start JDK 17+](mydoc_quickstart-jdk17.html) for details.
+
 #### JDK 11
-Hotswap Agent is now bundled with DCEVM. Just download [latest release of trava-jdk-11-dcevm](https://github.com/TravaOpenJDK/trava-jdk-11-dcevm/releases) JDK, unpack it and set JAVA_HOME to it's location (or add it as JDK to your IDE).
+Download [latest release of trava-jdk-11-dcevm](https://github.com/TravaOpenJDK/trava-jdk-11-dcevm/releases) JDK, unpack it and set JAVA_HOME to it's location (or add it as JDK to your IDE). Hotswap Agent is bundled with it.
+This JDK is not updated anymore, for new projects use JDK 17+ with JetBrains Runtime.
 
 #### JDK 8
 Download and install latest [DCEVM Java patch](https://github.com/dcevm/dcevm/releases) +

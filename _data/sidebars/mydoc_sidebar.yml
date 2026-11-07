@@ -28,7 +28,7 @@ entries:
       output: web, pdf
       type: homepage
 
-    - title: Quick Start JDK 17
+    - title: Quick Start JDK 17+
       url: /mydoc_quickstart-jdk17.html
       output: web, pdf
 
@@ -47,6 +47,14 @@ entries:
   - title: Release Notes
     output: web, pdf
     folderitems:
+
+    - title: 2.0.3 Release notes
+      url: /mydoc_release_notes_203.html
+      output: web, pdf
+
+    - title: 2.0.1 Release notes
+      url: /mydoc_release_notes_201.html
+      output: web, pdf
 
     - title: 2.0.0 Release notes
       url: /mydoc_release_notes_20.html
