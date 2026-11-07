@@ -1,5 +1,4 @@
 source "https://rubygems.org"
 
-gem 'github-pages', group: :jekyll_plugins
-gem 'jekyll'
-
+# GitHub Pages builds the site with its own versions of Jekyll and plugins, see https://pages.github.com/versions/
+gem "github-pages", group: :jekyll_plugins
