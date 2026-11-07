@@ -5,17 +5,29 @@ permalink: mydoc_quickstart.html
 folder: mydoc
 toc: false
 ---
+For new projects use JDK 17+ with JetBrains Runtime, see [Quick Start JDK 17+](mydoc_quickstart-jdk17.html). DCEVM for Java 8 is
+not updated anymore.
+
 ### Install
+#### Option 1: trava-jdk-8-dcevm (recommended for Java 8)
+1. download the latest release of [trava-jdk-8-dcevm](https://github.com/TravaOpenJDK/trava-jdk-8-dcevm/releases)
+(OpenJDK 8u282 with DCEVM as the default JVM), unpack it and set JAVA_HOME to its location (or add it as JDK to your IDE).
+1. download the [latest release of the Hotswap agent jar](https://github.com/HotswapProjects/HotswapAgent/releases)
+and put it anywhere on your disc. For example: `C:\java\hotswap-agent.jar`. This JDK contains an old agent (1.4.1) in `lib/hotswap`,
+use the latest one instead.
+1. run your application with `-javaagent:PATH_TO_AGENT\hotswap-agent.jar`. `-XXaltjvm=dcevm` is not needed here.
+
+#### Option 2: DCEVM installer
 1. download [latest release of DCEVM Java patch](https://github.com/dcevm/dcevm/releases) and launch the installer
 (e.g. `java -jar installer-light.jar`). **Important** Currently you need to select correct installer for Java major version (7/8).
 For example, if you're downloading **DCEVM for Java 8u181**, ensure that your installed JDK version is also Java 8u181 — the installer requires an exact match with the JDK version.
 1. select java installation directory on your disc and press "Install DCEVM as altjvm" button. Java 1.7+ versions are supported.
  Be sure to have write access to the java installation directory (on Windows: Start > cmd > right click > run as administrator).
 1. download [latest release of Hotswap agent jar](https://github.com/HotswapProjects/HotswapAgent/releases),
-unpack `hotswap-agent.jar` and put it anywhere on your disc. For example: `C:\java\hotswap-agent.jar`
+put `hotswap-agent.jar` anywhere on your disc. For example: `C:\java\hotswap-agent.jar`
 
 ### Run your application
-1. add following command line java attributes: `-XXaltjvm=dcevm -javaagent:PATH_TO_AGENT\hotswap-agent.jar` (you
+1. with the DCEVM installer add following command line java attributes: `-XXaltjvm=dcevm -javaagent:PATH_TO_AGENT\hotswap-agent.jar` (you
 need to replace PATH_TO_AGENT with an actual) directory. For example `java -XXaltjvm=dcevm -javaagent:c:\java\hotswap-agent.jar YourApp`.
   See dedicated pages for [Eclipse][mydoc_setup_eclipse], [IntelliJ IDEA][mydoc_setup_intellij_idea]
   and [Netbeans][mydoc_setup_netbeans] for IDE specific setup guides. If your application is already running, you still can attach agent jar using the example [code snippet](https://gist.github.com/xnike/a268fc209df52bf1bf09a268e97cef53).
