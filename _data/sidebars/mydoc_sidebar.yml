@@ -44,10 +44,6 @@ entries:
       url: /mydoc_configuration.html
       output: web, pdf
 
-  - title: Release Notes
-    output: web, pdf
-    folderitems:
-
     - title: AI coding agents
       url: /mydoc_ai_agents.html
       output: web, pdf
@@ -212,10 +208,6 @@ entries:
       url: /mydoc_plugin_wildfly_el.html
       output: web, pdf
 
-  - title: JVM/RT plugins
-    output: web, pdf
-    folderitems:
-
     - title: ZK
       url: /mydoc_plugin_zk.html
       output: web, pdf
@@ -239,10 +231,6 @@ entries:
     - title: JDK
       url: /mydoc_plugin_jdk.html
       output: web, pdf
-
-  - title: Containers plugins
-    output: web, pdf
-    folderitems:
 
     - title: Proxy
       url: /mydoc_plugin_proxy.html
